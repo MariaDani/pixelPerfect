@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		@font-face {
+			font-family: HelveticaNeueCyr-Bold;
+			src: url("fonts/HelveticaNeueCyr-Bold.ttf");
+		}
+		@font-face {
+			font-family: HelveticaNeueCyr-Thin;
+			src: url("fonts/HelveticaNeueCyr-Thin.ttf");
+		}
+		@font-face {
+			font-family: HelveticaNeueCyr-Heavy;
+			src: url("fonts/HelveticaNeueCyr-Heavy.ttf");
+		}
+		@font-face {
+			font-family: HelveticaNeueCyr-Medium;
+			src: url("fonts/HelveticaNeueCyr-Medium.ttf");
+		}
+		@font-face {
+			font-family: HelveticaNeueCyr-light;
+			src: url("fonts/HelveticaNeueCyr-Light.ttf");
+		}
+		
+
+
+		.container-fluid {
+			margin: 0;
+			padding: 0;
+		}
+		.col-md-12 {
+			margin: 0;
+			padding: 0;
+		}
+		.row {
+			margin-right: 0;
+		}
+		.navbar {
+			background-color: rgb(4, 4, 64);
+			color: white;
+			padding: 0;
+			margin: 0;
+			font-family: HelveticaNeueCyr-Medium;
+			font-size: 20px;
+			height: 90px;
+		}
+		.navbar-text {
+			margin-left: 120px;
+			font-size: 18px;
+			line-height: 120%;
+		}
+		.btn {
+			margin-right: 70px;
+			background-color: #c93555;
+			color: white;
+			border: none;
+			font-size: 23px;
+			padding: 13px 15px 18px 25px;
+			margin-top: 5px;
+			width: 255px;
+			height: 70px;
+		}
+		.btn:hover {
+			background-color: #c93555;
+			color: white;
+		}
+		.nav {
+			margin-left: 455px;
+			margin-top: -6px;
+			font-size: 20px;
+			font-size: 23px;
+		}
+		.nav-item {
+			color: white;
+			padding-right: 75px;
+		}
+		.nav-item:hover {
+			text-decoration: none;
+			color: white;
+		}
+		.nav-item:nth-child(3) {
+			padding-right: 0;
+		}
+
+
+		.background_block_1 {
+			background-image: url('./img/фон.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 925px;
+			width: auto;
+			margin: 0;
+			padding: 0;
+		}
+
+		hr {
+			color: #c93555;
+			size: 20px;
+			width: 10px;
+		}
+		.background_block_1 small{
+			color: #c93555;
+			font-family: HelveticaNeueCyr-Medium;
+			margin-left: 370px;
+			display: inline-block;
+			margin-top: 190px;
+			margin-bottom: 20px;
+			font-size: 22px;
+		}
+		span#administrator {
+			color: white;
+			margin-left: 370px;
+			display: inline-block;
+			font-size: 50px;
+			font-family: HelveticaNeueCyr-Bold;
+			margin-top: 20px;
+			line-height: 135%;
+		}
+		small#administrator {
+			color: white;
+			margin-left: 370px;
+			display: inline-block;
+			margin-top: 33px;
+			font-family: HelveticaNeueCyr-Medium;
+		}
+		table {
+			color: white;
+			border: none;
+			margin-left: 370px;
+			margin-top: 20px;
+			width: 860px;
+			font-family: HelveticaNeueCyr-Medium;
+			font-size: 20px;
+		}
+		table .header {
+			font-size: 16px;
+			font-family: HelveticaNeueCyr-Thin;
+		}
+		table td {
+			padding-top: 10px;
+			line-height: 120%;
+		}
+		table td:last-child {
+			padding-right: 55px;
+		}
+		.btn_margin {
+			margin-left: 370px;
+			font-size: 25px;
+			padding-right: 35px;
+		}
+		.button_margin {
+			margin-top: 65px;
+		}
+
+
+
+		.background_block_2 {
+			background-color: #040440;
+			display: block;
+			height: 683px;
+			margin-top: -35px;
+		}
+		.background_block_2 img {
+			margin-top: 100px;
+			margin-left: 410px;
+		}
+		.inner_content {
+			margin-right: 100px;
+			padding-top: 53px;
+			color: white;
+			font-family: HelveticaNeueCyr-Thin;
+			font-size: 30px;
+			line-height: 120%;
+		}
+		.inner_content#paragraph_2 {
+			padding-top: 20px;
+		}
+		.inner_header {
+			padding-top: 95px;
+			padding-left: 30px;
+			font-size: 27px;
+			font-family: HelveticaNeueCyr-Heavy;
+			color: white;
+		}
+
+
+
+		.background_block_3 {
+			background-color: #130b5b;
+			height: 825px;
+		}
+		.background_block_3 h5 {
+			margin-left: 350px;
+			padding-top: 70px;
+			font-size: 30px;
+		}
+		.background_block_3 p {
+			margin-left: 372px;
+			margin-top: 60px;
+			margin-right: 380px;
+			padding: 0;
+			margin-bottom: 55px;
+		}
+		.transfer_button {
+			font-size: 30px;
+			font-family: HelveticaNeueCyr-Heavy;
+			border-radius: 25px;
+			margin-right: 365px;
+			padding: 20px 30px 30px 30px;
+			float: right;
+			width: 535px;
+			height: 150px;
+			line-height: 130%;
+			border: 1px dashed black; 
+		}
+		#second {
+			float: left;
+			margin-top: -70px;
+		}
+		#second p {
+			margin-right: 20px;
+			margin-top: 30px;
+		}
+
+
+		.navbar img {
+			margin-left: 372px;
+			margin-top: 45px;
+		}
+		span#footer {
+			display: inline-block;
+			font-family: HelveticaNeueCyr-light;
+			font-size: 23px;
+			margin-top: 45px;
+		}
+		.navbar#footer_nav {
+			height: 110px;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+		.footer_text {
+			font-family: HelveticaNeueCyr-light;
+			font-size: 23px;
+			display: inline-block;
+		}
+		.navbar-text#footer {
+			padding-top: 0;
+			vertical-align: middle;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar">
+  					<span class="navbar-text">КУРСЫ ПРОФЕССИОНАЛЬНОЙ <br> ПЕРЕПОДГОТОВКИ</span>
+  					<ul class="nav justify-content-end">
+      					<a class="nav-item nav-link" href="#">О НАС</a>
+      					<a class="nav-item nav-link" href="#">О КУРСЕ</a>
+      					<a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
+   	 				</ul>
+   	 				<button class="btn btn-secondary badge-pill my-2 my-sm-0" type="submit">ЗАПИСАТЬСЯ</button>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="background_block_1">
+					<small>Профессия</small>
+					<br>
+					<span id="administrator">СИСТЕМНЫЙ <br> АДМИНИСТРАТОР</span>
+					<br>
+					<small id="administrator">Незаменимый специалист в любой компании</small>
+					<br>
+					<div class="button_margin">
+						<button class="btn btn-secondary badge-pill my-2 my-sm-0 btn_margin" type="submit">Записаться</button>
+					</div>
+					<br>
+					<table>
+						<tr>
+							<td class="header">СТОИМОСТЬ</td>
+							<td class="header">ПРОДОЛЖИТЕЛЬНОСТЬ</td>
+							<td class="header">ФОРМА ОБУЧЕНИЯ</td>
+						</tr>
+						<tr>
+							<td>От 2700р/мес</td>
+							<td>3 месяца</td>
+							<td>Очная</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="background_block_2">
+					<img src="./img/картинка.png" width="480px" height="420px" align="left" hspace="100">
+					<h5 class="inner_header">Кто такой системный администратор</h5>
+					<p class="inner_content">Системный администратор обеспечивает бесперебойное функционирование компьютерной техники и программного обеспечения в организации. Он занимается поддержкой серверов, проектирует и администрирует локальную сеть, выдает пользователем доступ к сайтам.</p>
+					<p class="inner_content" id="paragraph_2">Сисадмин &mdash; штатный или на аутсорсе &mdash; нужен каждой компании, где есть хотябы один компьютер, поэтому представители этой профессии не испытывают проблем с трудоустройством</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="background_block_3">
+					<h5 class="inner_header">О курсе</h5>
+					<p class="inner_content">Курс предназначен для широкого круга слушателей, желающих познакомиться с локальными сетями, понять принципы, по которым они работают, получить знания и навыки по их построению. Слушатели так же познакомятся с основополагающими принципами работы OS Windows в локальной сети. Курс является базовым в обучении технических специалистов и предполагает обучение фундаментальным принципам построения локальных сетей.</p>
+					<div id="second">
+					<h5 class="inner_header">Выдаваемый документ</h5>
+					<p class="inner_content">Диплом о профессиональной подготовке <br> с просвоением квалификации</p>
+				</div>
+					<button class="btn btn-secondary badge-pill my-2 my-sm-0 transfer_button" type="submit">САЙТ ОБРАЗОВАТЕЛЬНОГО <br> ЦЕНТРА</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar" id="footer_nav">
+					<img src="./img/socials.png" width="150px" height="37px">
+					<span class="navbar-text" id="footer">098773 Санкт Петербург, <br> ул. Бассейная, д 23</span>
+					<div class="footer_text">
+						<span class="navbar-text" id="footer">sys-adm@gmail.com</span>
+						<span class="navbar-text" id="footer">8-800-321-43-23</span>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
